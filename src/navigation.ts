@@ -16,7 +16,14 @@ export const headerData = {
     },
     {
       text: 'Projects',
-      href: getPermalink('/projects'),
+      links: [
+        { text: 'QIIME 2', href: getPermalink('/projects') },
+        { text: 'Compost Microbiome Lab', href: getPermalink('/projects') },
+        { text: 'Vermicomposting', href: getPermalink('/projects') },
+        { text: 'Space Agriculture', href: getPermalink('/projects') },
+        { text: 'Undergraduate Research', href: getPermalink('/projects') },
+        { text: '4CSCC', href: getPermalink('/projects') },
+      ],
     },
     {
       text: 'Professional Services',
