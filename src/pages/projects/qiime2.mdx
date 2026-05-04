@@ -1,0 +1,28 @@
+---
+layout: ~/layouts/PageLayout.astro
+title: 'QIIME 2'
+---
+
+import HeroText from '~/components/widgets/HeroText.astro';
+import Stats from '~/components/widgets/Stats.astro';
+
+<HeroText
+    id="features"
+    title="<span class='text-primary'>QIIME 2</span> Enables Microbiome Science"
+    subtitle="Our <a href='https://qiime2.org' class='text-primary'>software tools</a>
+ have driven microbiome science innovations since 2011."
+/>
+<Stats
+    stats={[
+        { title: 'Citations', amount: '50K+' },
+        { title: 'Patent Applications with QIIME 2', amount: '2K+' },
+        { title: 'Clinical Trials', amount: '50+' },
+        { title: 'QIIME 2 Forum Users', amount: '8000+' },
+    ]}
+/>
+
+<div class="max-w-4xl mx-auto px-6 py-10 text-lg leading-relaxed">
+  <p>
+    QIIME 2 (Quantitative Insights Into Microbial Ecology 2) is a <span class="text-primary font-semibold">premier open-source bioinformatics platform</span> revolutionizing how scientists decode the invisible microbial world, designed to empower researchers at <span class="text-primary font-semibold">every level of computational expertise</span>, from first-time users and lab technicians to seasoned bioinformaticians and computational scientists. QIIME 2 <span class="text-primary font-semibold">seamlessly guides</span> users through every critical step of microbiome analysis, from quality filtering and denoising of amplicon sequencing reads, to ASV generation, phylogenetic tree construction, diversity metrics, taxonomic assignment, and publication-ready visualizations, all within a <span class="text-primary font-semibold">fully reproducible, provenance-tracked</span> computational environment backed by one of the most vibrant and collaborative open-source communities in modern science. What truly sets QIIME 2 apart is its ability to place the most rigorous, cutting-edge microbiome analytical tools in the hands of researchers across the globe, <span class="text-primary font-semibold">unifying scientific knowledge across disciplines</span>, institutions, and expertise levels to <span class="text-primary font-semibold">accelerate discovery</span> at every scale.
+  </p>
+</div>

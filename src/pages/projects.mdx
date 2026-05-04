@@ -2,25 +2,3 @@
 layout: ~/layouts/PageLayout.astro
 title: 'Projects'
 ---
-
-import HeroText from '~/components/widgets/HeroText.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import Features from '~/components/widgets/Features.astro';
-import FeatureItem from '~/components/widgets/FeatureItem.astro';
-
-<HeroText
-    id="features"
-    title="<span class='text-primary'>QIIME 2</span> Enables Microbiome Science"
-    subtitle="Our <a href='https://qiime2.org' class='text-primary'>software tools</a>
- have driven microbiome science innovations since 2011."
-/>
-<Stats
-    stats={[
-        { title: 'Citations', amount: '50K+' },
-        { title: 'Patent Applications with QIIME 2', amount: '2K+' },
-        { title: 'Clinical Trials', amount: '50+' },
-        { title: 'QIIME 2 Forum Users', amount: '8000+' },
-    ]}
-/>
-
-
