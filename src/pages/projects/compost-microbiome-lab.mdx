@@ -19,7 +19,8 @@ import FeatureItem from '~/components/widgets/FeatureItem.astro';
   <p class="mb-10">
     At the CML, we are flipping the script. Using QIIME 2 and next-generation sequencing and multi-omics approaches, we are diving deep into the microbial communities driving human excrement composting (HEC), identifying which microbes are present, which are metabolically active, and what novel enzymes they are producing. This biodiscovery work is laying the scientific foundation for faster, safer, and more reliable composting systems.
   </p>
-  <p class="mt-10 mb-10">
+  <div class="mt-10"></div>
+  <p class="mb-10">
     <strong>The goal: transform human waste into nutrient-dense soil amendments that restore degraded soils, address public health crises, support global food security, and one day help build the bioregenerative life support systems that will carry humanity to other worlds.</strong>
   </p>
   <p class="mt-10 mb-10">
@@ -30,8 +31,17 @@ import FeatureItem from '~/components/widgets/FeatureItem.astro';
   </p>
 </div>
 
-<div class="max-w-3xl mx-auto px-8 pb-10 text-lg text-center">
-  <p class="mb-4"><a href="https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-024-01894-x" class="text-primary">Microbiome multi-omics can accelerate human excrement composting research</a></p>
-  <p class="mb-4"><a href="https://academic.oup.com/ismej/article/18/1/wrae228/7888797" class="text-primary">Microbiome science of human excrement composting</a></p>
-  <p><a href="https://academic.oup.com/ismecommun/article/5/1/ycaf089/8152717" class="text-primary">Upcycling human excrement: the gut microbiome to soil microbiome axis</a></p>
-</div>
+<Features
+id="features"
+columns={4}
+>
+    <FeatureItem>
+        <a href="https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-024-01894-x">Microbiome multi-omics can accelerate human excrement composting research</a>
+    </FeatureItem>
+    <FeatureItem>
+        <a href="https://academic.oup.com/ismej/article/18/1/wrae228/7888797">Microbiome science of human excrement composting</a>
+    </FeatureItem>
+    <FeatureItem>
+        <a href="https://academic.oup.com/ismecommun/article/5/1/ycaf089/8152717">Upcycling human excrement: the gut microbiome to soil microbiome axis</a>
+    </FeatureItem>
+</Features>
