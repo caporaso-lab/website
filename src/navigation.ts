@@ -21,8 +21,9 @@ export const headerData = {
         { text: 'Composting Microbiome Lab', href: getPermalink('/projects/compost-microbiome-lab') },
         { text: 'Vermicomposting', href: getPermalink('/projects/vermicomposting') },
         { text: 'Space Agriculture', href: getPermalink('/projects/space-agriculture') },
-        { text: 'Undergraduate Research', href: getPermalink('/projects/undergraduate-research') },
         { text: '4CSCC', href: getPermalink('/projects/4cscc') },
+        { text: 'Undergraduate Research', href: getPermalink('/projects/undergraduate-research') },
+        { text: 'Undergraduate Software Engineering', href: getPermalink('/projects/undergraduate-software-engineering') },
       ],
     },
     {
