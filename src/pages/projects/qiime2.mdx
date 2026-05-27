@@ -1,0 +1,34 @@
+---
+layout: ~/layouts/PageLayout.astro
+title: 'QIIME 2'
+---
+
+import HeroText from '~/components/widgets/HeroText.astro';
+import Stats from '~/components/widgets/Stats.astro';
+
+<HeroText
+    id="features"
+    title="<span class='text-primary'>QIIME 2</span> Enables Microbiome Science"
+    subtitle="Our <a href='https://qiime2.org' class='text-primary'>software tools</a>
+ have driven microbiome science innovations since 2011."
+/>
+<Stats
+    stats={[
+        { title: 'Citations', amount: '50K+' },
+        { title: 'Patent Applications with QIIME 2', amount: '2K+' },
+        { title: 'Clinical Trials', amount: '50+' },
+        { title: 'QIIME 2 Forum Users', amount: '8000+' },
+    ]}
+/>
+
+<div class="max-w-5xl mx-auto px-8 py-10 text-lg leading-relaxed text-left hyphens-auto">
+  <p>
+    QIIME 2 (Quantitative Insights Into Microbial Ecology 2) is a <strong>premier open-source bioinformatics platform</strong> revolutionizing how scientists decode the invisible microbial world, designed to empower researchers at <strong>every level of computational expertise</strong>, from first-time users and lab technicians to seasoned bioinformaticians and computational scientists.
+  </p>
+  <p class="mt-6">
+    QIIME 2 <strong>seamlessly guides</strong> users through every critical step of microbiome analysis, from quality filtering and denoising of amplicon sequencing reads, to ASV generation, phylogenetic tree construction, diversity metrics, taxonomic assignment, and publication-ready visualizations, all within a <strong>fully reproducible, provenance-tracked</strong> computational environment backed by one of the most vibrant and collaborative open-source communities.
+  </p>
+  <p class="mt-6">
+    What truly sets QIIME 2 apart is its ability to place the most rigorous, cutting-edge microbiome analytical tools in the hands of researchers across the globe, <strong>unifying scientific knowledge across disciplines</strong>, institutions, and expertise levels to <strong>accelerate discovery</strong> at every scale.
+  </p>
+</div>

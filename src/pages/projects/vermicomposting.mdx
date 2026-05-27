@@ -1,0 +1,47 @@
+---
+layout: ~/layouts/PageLayout.astro
+title: 'Vermicomposting'
+---
+
+import HeroText from '~/components/widgets/HeroText.astro';
+import wormsImg from '~/assets/images/Worms.jpg';
+import wkshpImg from '~/assets/images/vermicompost-wkshp.jpg';
+
+<HeroText
+    id="features"
+    title="<span class='text-primary'>Vermicomposting</span>"
+/>
+
+<div class="max-w-4xl mx-auto px-8 pt-5 pb-10 text-lg leading-relaxed text-left hyphens-auto">
+  <div class="mb-10">
+    <img src={wormsImg.src} alt="Vermicompost worms" class="w-full rounded-lg shadow-md" />
+  </div>
+
+  <p class="mb-10">
+    In addition to our ongoing human excrement composting projects, we recently established an on-campus vermicomposting living lab. Vermicomposting uses earthworms and their associated gut microbiomes to break down organic matter into a nutrient-rich soil amendment known as vermicompost. Unlike traditional thermophilic composting, which relies on microbial heat generation, vermicomposting is a lower-temperature, continuous process driven by the worm digestive system and the diverse microbial communities it supports. The resulting material is biologically active and humus-rich, improving soil structure, water retention, nutrient availability, and overall soil health. Worm castings are also rich in plant-available nitrogen, phosphorus, potassium, and beneficial microorganisms that can support plant growth and suppress soil-borne pathogens. Beyond soil benefits, vermicomposting diverts organic waste from landfills, reducing methane emissions and helping close the nutrient loop between food systems and soils.
+  </p>
+
+  <p class="mt-10 mb-10">
+    Funded by the <strong><a href="https://in.nau.edu/green-nau/nau-green-fund/" class="text-primary">NAU Green Fund</a></strong>, the project was led by undergraduate compost manager Charlotte Hurley, who coordinated weekly data monitoring, sample collection, and pre-consumer food waste collection from The DüB dining hall on NAU's campus. Her work established a highly functional vermicomposting system while laying the foundation for expanding NAU's composting and sustainability initiatives. The living lab directly supports research at the Compost Microbiome Lab (CML) through the collection of worm castings and vermicompost samples. At the CML, we are particularly interested in the microbial ecology driving vermicomposting processes and how the worm gut microbiome shapes the quality and biological activity of the final product. The resulting datasets and analyses will also contribute to the development of additional bioinformatics tutorials and support our broader biodiscovery efforts focused on the microbial world.
+  </p>
+
+  <p class="mb-10">
+    The project aims to reduce campus food waste streams, increase diversion of pre-consumer dining hall waste, and raise awareness of sustainable waste management both on and off campus. This work directly supports NAU's Climate Action Plan by expanding composting efforts to include vermicomposting and advancing a closed-loop approach to campus sustainability. By producing high-quality vermicompost, the system reduces reliance on energy-intensive synthetic fertilizers while increasing soil organic matter and supporting carbon sequestration when applied to NAU landscapes.
+  </p>
+
+  <p class="mb-10">
+    Beyond waste diversion and soil production, the vermicomposting living lab serves as an interdisciplinary research, education, and outreach platform. It provides experiential learning opportunities for students across multiple disciplines while supporting student-led research projects, workshops, and future Green Fund proposals. Student involvement has expanded day-to-day operational capacity, strengthened research efforts, and created opportunities for future program growth and funding.
+  </p>
+
+  <p class="mb-10">
+    We also partnered with the Students for Sustainable Living and Urban Gardening (SSLUG) Garden on campus. Established in 2008 as a Sustainable Communities master's project, SSLUG has long served as a hub for hands-on sustainability education at NAU. Through a vermicomposting workshop hosted at the garden, students and community members learned how worms can enhance soil quality, support agricultural productivity, and contribute to more sustainable food systems, while also learning just how cool worms really are.
+  </p>
+
+  <div class="my-10">
+    <img src={wkshpImg.src} alt="Vermicomposting workshop" class="w-full rounded-lg shadow-md" />
+  </div>
+
+  <p class="mt-10">
+    Read more about our project in the NAU Review: <a href="https://news.nau.edu/vermicomposting/" class="text-primary">"Worms at work: Turning waste into soil"</a>
+  </p>
+</div>
