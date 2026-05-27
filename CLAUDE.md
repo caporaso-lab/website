@@ -2,7 +2,7 @@
 
 ## Project overview
 
-This is the source for the [Caporaso Lab](https://cap-lab.bio) website, built with Astro + Tailwind CSS on top of the [AstroWind](https://github.com/onwidget/astrowind) template.
+This is the source for the [Caporaso Lab](https://caplab.dev) website, built with Astro + Tailwind CSS on top of the [AstroWind](https://github.com/onwidget/astrowind) template.
 Pages are `.astro` or `.mdx` files under `src/pages/`.
 Site-wide config is in `src/config.yaml` and `src/navigation.js`.
 
@@ -40,7 +40,7 @@ Target sizes: photos under 500 KB, poster JPEGs under 1.5 MB, PNG thumbnails und
 ### PDFs
 
 Never commit PDFs to the repository.
-PDFs are hosted as assets on the GitHub Release tagged [`poster-assets`](https://github.com/caporaso-lab/caplab-website-2/releases/tag/poster-assets).
+PDFs are hosted as assets on the GitHub Release tagged [`poster-assets`](https://github.com/caporaso-lab/website/releases/tag/poster-assets).
 To add a new PDF:
 
 ```sh
@@ -50,7 +50,7 @@ gh release upload poster-assets path/to/file.pdf
 Link to PDFs using the release download URL pattern:
 
 ```
-https://github.com/caporaso-lab/caplab-website-2/releases/download/poster-assets/filename.pdf
+https://github.com/caporaso-lab/website/releases/download/poster-assets/filename.pdf
 ```
 
 ## Commit hygiene
@@ -65,16 +65,21 @@ Before merging any branch, squash it to 2–3 logical commits:
 To squash a branch onto `main`:
 
 ```sh
+# Create a backup before rewriting history
+git push origin <current-tip-sha>:refs/heads/backup/<branch-name>-pre-rebase
+
 MERGE_BASE=$(git merge-base HEAD origin/main)
 git reset --soft $MERGE_BASE
-# stage and commit in groups, then force-push
+# stage and commit in groups, then force-push the branch
 git push --force-with-lease origin <branch-name>
 ```
 
-Always create a remote backup tag before rewriting history:
+After squashing, merge the branch and push `main` directly:
 
 ```sh
-git push origin <current-tip-sha>:refs/heads/backup/<branch-name>-pre-rebase
+git checkout main && git pull
+git merge <branch-name>
+git push origin main
 ```
 
 ## Code review checklist
