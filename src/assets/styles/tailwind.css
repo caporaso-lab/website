@@ -66,6 +66,12 @@
   display: block;
 }
 
+.subdropdown:focus .subdropdown-menu,
+.subdropdown:focus-within .subdropdown-menu,
+.subdropdown:hover .subdropdown-menu {
+  display: block;
+}
+
 [astro-icon].icon-light > * {
   stroke-width: 1.2;
 }

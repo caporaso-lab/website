@@ -1,0 +1,22 @@
+---
+layout: ~/layouts/PageLayout.astro
+title: 'Human Excrement Composting'
+---
+
+import HeroText from '~/components/widgets/HeroText.astro';
+import hecSamplingImg from '~/assets/images/hec-sampling.jpg';
+
+<HeroText
+    id="features"
+    title="<span class='text-primary'>Human Excrement Composting</span>"
+/>
+
+<div class="max-w-4xl mx-auto px-8 py-10 text-lg leading-relaxed text-left">
+
+  <div class="mb-10">
+    <img src={hecSamplingImg.src} alt="HEC sampling" class="w-full rounded-lg shadow-md" />
+  </div>
+
+  <p class="mb-10">Many undergraduate researchers have contributed to our human excrement composting (HEC) work, from collecting samples to turning compost piles. We collected human excrement from commercial Colorado River outfitters, mixed it with Ponderosa Pine woodchips as a bulking agent, and composted the material above 55°C (131°F) for over 20 days across three major turning events, and above 32°C (90°F) for over 44 days. The finished material was then allowed to cure for nine months. Throughout the composting process, we collected weekly samples for 16S rRNA, ITS, metagenomic, and metatranscriptomic sequencing, as well as microbial culturing and pathogen detection assays targeting <em>E. coli</em>, <em>C. perfringens</em>, and panentero-, adeno-, and noroviruses. A special thank you to undergraduate researchers Olivia Garcia, Kaylee Kashner, and Grecia Bustamante, and graduate student Sam Lockhart for their invaluable contributions to this work.</p>
+
+</div>

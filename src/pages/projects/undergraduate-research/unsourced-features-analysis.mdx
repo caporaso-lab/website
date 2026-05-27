@@ -1,0 +1,30 @@
+---
+layout: ~/layouts/PageLayout.astro
+title: 'Closed Composting Systems Will Likely Require High-Diversity Microbial Inoculants'
+---
+
+import HeroText from '~/components/widgets/HeroText.astro';
+import oliviaPosterImg from '~/assets/images/Olivia-poster.jpg';
+
+<HeroText
+    id="features"
+    title="<span class='text-primary'>Closed Composting Systems Will Likely Require High-Diversity Microbial Inoculants</span>"
+/>
+
+<div class="max-w-4xl mx-auto px-8 py-10 text-lg leading-relaxed text-left">
+
+  <p class="mb-10">Olivia Garcia analyzed a dataset from a one-year mesophilic human excrement composting (HEC) experiment conducted by <a href="https://academic.oup.com/ismecommun/article/5/1/ycaf089/8152717" class="text-primary">Meilander et al. (2025)</a>, in which excrement, toilet paper, and bulking material were composted together and the microbiome was tracked weekly for one year. In this framework, taxa traced back to a bucket's own source inputs were classified as intra-sourced, those originating from another bucket's source material were classified as inter-sourced, and those that could not be attributed to any source were classified as extra-sourced. Her analysis revealed that the majority of the HEC microbiome was composed of inter- and extra-sourced taxa; microbes not traceable to the bucket's own source HE or bulking material. These unknown microbes are hypothesized to originate from external environmental inputs, through airflow, contamination, or insect activity. Olivia's ongoing work aims to determine the origin and functional role of these taxa within the composting process, offering important insight into the full ecological complexity of HEC microbial communities.</p>
+
+  <div class="flex flex-col md:flex-row gap-4 justify-center my-10 items-start">
+    <div class="flex-1">
+      <img src={oliviaPosterImg.src} alt="Olivia with her research poster" class="w-full rounded-lg shadow-md" style="height: 420px; object-fit: cover;" />
+    </div>
+    <div class="flex-1">
+      <a href="https://doi.org/10.6084/m9.figshare.32194083" target="_blank" rel="noopener" class="block rounded-lg shadow-md hover:shadow-lg transition-shadow">
+        <img src="/posters/Unsourced-Feature-HEC.png" alt="Unsourced features in HEC poster" class="w-full rounded-lg" />
+      </a>
+      <p class="text-center text-sm text-gray-500 mt-2">Click to View a Larger Version</p>
+    </div>
+  </div>
+
+</div>

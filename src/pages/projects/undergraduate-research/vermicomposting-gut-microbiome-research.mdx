@@ -1,0 +1,30 @@
+---
+layout: ~/layouts/PageLayout.astro
+title: 'Vermicomposting Gut Microbiome Research'
+---
+
+import HeroText from '~/components/widgets/HeroText.astro';
+import baPosterImg from '~/assets/images/b.a-poster.JPG';
+
+<HeroText
+    id="features"
+    title="<span class='text-primary'>Vermicomposting Gut Microbiome Research</span>"
+/>
+
+<div class="max-w-4xl mx-auto px-8 py-10 text-lg leading-relaxed text-left">
+
+  <p class="mb-10">Undergraduate researchers Brooke Lercher and Andrew Grusenmeyer investigated how worm diet shapes gut microbial community dynamics across two ecologically distinct earthworm species: the red wiggler (<em>Eisenia fetida</em>) and the common earthworm (<em>Lumbricus terrestris</em>). By collecting samples of vermicompost and worm castings from bin-based systems maintained on differing diets, Brooke and Andrew analyzed 16S rRNA amplicon sequencing to characterize microbial community composition and track how those communities shift over time. Key questions driving this work include: Which microbial taxa are present and active in worm guts? Are specific microbes associated with enzymes that accelerate decomposition or facilitate pathogen suppression? And how does diet influence gut microbiome structure across species? This foundational biodiscovery work paves the way for optimizing vermicomposting systems for speed, safety, and soil amendment quality.</p>
+
+  <div class="flex flex-col md:flex-row gap-4 justify-center my-10 items-start">
+    <div class="flex-1">
+      <img src={baPosterImg.src} alt="Brooke and Andrew with their research poster" class="w-full rounded-lg shadow-md" style="height: 420px; object-fit: cover;" />
+    </div>
+    <div class="flex-1">
+      <a href="https://doi.org/10.6084/m9.figshare.32194266" target="_blank" rel="noopener" class="block rounded-lg shadow-md hover:shadow-lg transition-shadow">
+        <img src="/posters/Vermicompost-Gut-Microbiome.png" alt="Vermicomposting gut microbiome research poster" class="w-full rounded-lg" />
+      </a>
+      <p class="text-center text-sm text-gray-500 mt-2">Click to View a Larger Version</p>
+    </div>
+  </div>
+
+</div>

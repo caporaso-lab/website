@@ -1,0 +1,34 @@
+---
+layout: ~/layouts/PageLayout.astro
+title: 'Vermicompost Living Lab'
+---
+
+import HeroText from '~/components/widgets/HeroText.astro';
+import charlottePosterImg from '~/assets/images/Charlotte-poster.JPG';
+
+<HeroText
+    id="features"
+    title="<span class='text-primary'>Vermicompost Living Lab</span>"
+/>
+
+<div class="max-w-4xl mx-auto px-8 py-10 text-lg leading-relaxed text-left">
+
+  <p class="mb-10">Charlotte Hurley served as the CML's inaugural Vermicompost Manager, playing a foundational role in establishing NAU's on-campus vermicomposting living lab. Funded by the <a href="https://in.nau.edu/green-nau/nau-green-fund/" class="text-primary">NAU Green Fund</a>, Charlotte designed and built out the lab's in ground vermicomposting system from the ground up, overseeing day-to-day operations, worm health monitoring, and weekly data and sample collection. A cornerstone of her work was developing a formal feasibility study titled <a href="https://doi.org/10.6084/m9.figshare.32248965" target="_blank" rel="noopener" class="text-primary">"Feasibility Study on Vermicomposting at Northern Arizona University"</a> assessing the potential for scaling vermicomposting across NAU's campus. She also built a critical operational pipeline to divert pre-consumer food scraps from The DüB dining hall, established in collaboration with The DüB's Chef Bill and Sodexo's Sustainability Specialist, Jacob Vanetsky, creating a reliable and low-burden waste stream for the living lab. Beyond the lab, Charlotte organized and led a hands-on vermicomposting workshop at the SSLUG Garden, bringing the science of worm-powered composting to the broader NAU community. Charlotte presented her work at NAU's Undergraduate Symposium (UGRADs), sharing her findings with faculty, peers, and community members.</p>
+
+  <div class="flex flex-col md:flex-row gap-4 justify-center my-10 items-start">
+    <div class="flex-1">
+      <img src={charlottePosterImg.src} alt="Charlotte at UGRADs" class="w-full rounded-lg shadow-md" style="height: 420px; object-fit: cover;" />
+    </div>
+    <div class="flex-1">
+      <a href="https://doi.org/10.6084/m9.figshare.32248965" target="_blank" rel="noopener" class="block rounded-lg shadow-md hover:shadow-lg transition-shadow">
+        <img src="/posters/Feasibility-Study-Vermicomposting.png" alt="Vermicompost Living Lab feasibility study poster" class="w-full rounded-lg" />
+      </a>
+      <p class="text-center text-sm text-gray-500 mt-2">Click to View a Larger Version</p>
+    </div>
+  </div>
+
+  <p class="mt-10">
+    Read more about the vermicomposting living lab in the NAU Review: <a href="https://news.nau.edu/vermicomposting/" class="text-primary">"Worms at work: Turning waste into soil"</a>
+  </p>
+
+</div>

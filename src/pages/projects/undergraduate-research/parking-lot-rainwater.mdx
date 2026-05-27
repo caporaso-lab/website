@@ -1,0 +1,32 @@
+---
+layout: ~/layouts/PageLayout.astro
+title: 'Parking Lot Rainwater Diversion Feasibility Study'
+---
+
+import HeroText from '~/components/widgets/HeroText.astro';
+import rainwaterPosterImg from '~/assets/images/rainwater-poster.JPG';
+
+<HeroText
+    id="features"
+    title="<span class='text-primary'>Parking Lot Rainwater Diversion Feasibility Study</span>"
+/>
+
+<div class="max-w-4xl mx-auto px-8 py-10 text-lg leading-relaxed text-left">
+
+  <p class="mb-10">This Environmental Science Capstone project conducted a comprehensive feasibility study titled <a href="/posters/Feasibility-Study-Rainwater-Diversion.pdf" target="_blank" rel="noopener" class="text-primary">"The Implementation of Parking Lot Rainwater Diversion Gardens at NAU Flagstaff"</a> evaluating whether, where, and how rainwater diversion gardens could be implemented within or around NAU parking lots by converting a limited number of parking spaces, elevated berms, or the surrounding landscape into green infrastructure. The study examined social, administrative, technical, regulatory, spatial, and financial dimensions of such a conversion, with the goal of determining alignment with NAU's sustainability goals, campus planning priorities, stormwater management needs, and operational constraints. The team conducted site assessments across campus parking areas, reviewed relevant policies and accessibility standards, and engaged key NAU administrative units including Facilities, Parking and Transportation Services, Campus Planning, and Risk Management to understand approval processes and institutional priorities.</p>
+
+  <p class="mb-10">Building on stakeholder input and site data, the team developed conceptual designs for rainwater diversion garden configurations, including drainage pathways, planting concepts, and safety considerations. Their findings were synthesized into a comprehensive feasibility report with recommendations, budget estimates, maintenance frameworks, and proposed next steps — including potential pathways to pilot funding through the NAU Green Fund. We anticipate that future Environmental Science Capstone students will build on this feasibility study by refining its recommendations, conducting additional research, and collaborating with NAU administration and students to implement these rainwater diversion systems. This project directly supports NAU's Climate Action Plan and advances the university's commitment to sustainable stormwater management and campus green infrastructure.</p>
+
+  <div class="flex flex-col md:flex-row gap-4 justify-center my-10 items-start">
+    <div class="flex-1">
+      <img src={rainwaterPosterImg.src} alt="Rainwater diversion team with poster" class="w-full rounded-lg shadow-md" style="height: 420px; object-fit: cover;" />
+    </div>
+    <div class="flex-1">
+      <a href="/posters/Parking%20Lot%20Rainwater%20Harvesting.pdf" target="_blank" rel="noopener" class="block rounded-lg shadow-md hover:shadow-lg transition-shadow">
+        <img src="/posters/Feasibility-Study-Rainwater-Diversion.png" alt="Parking lot rainwater diversion poster" class="w-full rounded-lg" />
+      </a>
+      <p class="text-center text-sm text-gray-500 mt-2">Click to View a Larger Version</p>
+    </div>
+  </div>
+
+</div>
