@@ -1,6 +1,6 @@
 # Caporaso Lab website source
 
-This repository contains the source for the [Caporaso Lab](https://cap-lab.bio) website, hosted at [caplab.dev](https://caplab.dev).
+This repository contains the source for the [Caporaso Lab](https://caplab.dev) website, hosted at [caplab.dev](https://caplab.dev).
 
 The site is built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/), using the [AstroWind](https://github.com/onwidget/astrowind) template as its starting point.
 
