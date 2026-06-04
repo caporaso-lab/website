@@ -1,16 +1,17 @@
 ---
 import HeadshotGridItem from '~/components/ui/HeadshotGridItem.astro';
 
-let { title = '', image = '' } = Astro.props;
+let { title = '', image = '', photoSize = 'w-48 h-48' } = Astro.props;
 ---
 
 <HeadshotGridItem
   {title}
-  containerClass="relative flex flex-col rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900"
+  containerClass="relative flex flex-col rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur bg-white dark:bg-slate-900 border-t-4 border-blue-500 hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
   panelClass="max-w-none"
   titleClass="md:text-[1.3rem]"
   descriptionClass="prose prose-sm pt-2 text-muted dark:prose-string:text-white"
   image={image}
+  photoSize={photoSize}
 >
   <slot />
 </HeadshotGridItem>

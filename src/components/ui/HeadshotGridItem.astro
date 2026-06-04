@@ -9,13 +9,14 @@ let {
   descriptionClass,
   containerClass,
   image = null,
+  photoSize = 'w-48 h-48',
 } = Astro.props;
 ---
 
 <div class={twMerge('pt-8', containerClass)}>
   <div class={twMerge('flex flex-col', panelClass)}>
     <div class="flex justify-center">
-      {image && <img src={image} class="w-48 h-48 rounded-md mb-1 object-cover" />}
+      {image && <img src={image} class={twMerge('rounded-md mb-1 object-cover brightness-105 contrast-105', photoSize)} />}
     </div>
     <div class="m-0">
       {title && <h3 class={twMerge('text-xl font-bold mt-2 text-center', titleClass)}>{title}</h3>}
