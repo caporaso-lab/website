@@ -35,53 +35,139 @@ import AndrewSanchez from '~/assets/images/AndrewSanchez.png';
 import KarenSchwarzberg from '~/assets/images/KarenSchwarzberg.png';
 import ArronShiffer from '~/assets/images/ArronShiffer.png';
 import MaxVonHippel from '~/assets/images/MaxVonHippel.png';
+import BrookeLercher from '~/assets/images/Brooke-Lercher.jpeg';
+import CharlotteHurley from '~/assets/images/Charlotte-Hurley.jpeg';
+import OliviaGarcia from '~/assets/images/Olivia-Garcia.jpeg';
+import AilseSotoHerrera from '~/assets/images/Ailse Soto Herrera.jpg';
+import CiannaBrooks from '~/assets/images/Cianna Brooks-web.JPG';
+import AndrewGrusenmeyer from '~/assets/images/AndrewGrusenmeyer.jpg';
+import MacabeWood from '~/assets/images/MacabeWood.jpeg';
+import MichelleTang from '~/assets/images/Michelle Tang.jpg';
+import SashaNast from '~/assets/images/Sasha Nast.jpeg';
 
 
 <Features2
  title="Caporaso Lab Team"
- subtitle="An ever-evolving team of biologists, research software engineers, and students."
- columns={4}>
+ subtitle="We advance microbiome science and the scientists who drive it through rigorous computation, open-source innovation, and a genuine commitment to the next generation of researchers."
+ columns={3}
+ classes={{ headline: { title: 'text-5xl md:text-6xl', container: 'max-w-[900px] mx-auto' } }}>
 
-    <HeadshotFeatureItem title="Greg Caporaso" image={GregCaporaso.src}>
-        <JobTitle>*Professor*</JobTitle>
-        - books
-        - computers
-        - regenerative agriculture
+    <div class="col-span-full mb-4">
+      <hr class="mb-6 border-gray-200" />
+      <h3 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">Software Engineers and Scientists</h3>
+      <p class="text-lg text-muted">We are a diverse team of software engineers, data scientists, and researchers working at the intersection of biology and computation to build the tools and pipelines that define modern microbiome analysis.</p>
+    </div>
+
+    <HeadshotFeatureItem title="Greg Caporaso" image={GregCaporaso.src} photoSize="w-56 h-56">
+        <JobTitle>*Principal Investigator and Professor*</JobTitle>
+
+        **Interests**
+        - 📚 Books
+        - 💻 Computers
+        - 🌱 Regenerative Agriculture
     </HeadshotFeatureItem>
-    <HeadshotFeatureItem title="Anthony Simard" image={AnthonySimard.src}>
+    <HeadshotFeatureItem title="Anthony Simard" image={AnthonySimard.src} photoSize="w-56 h-56">
         <JobTitle>*Research Software Engineer IV*</JobTitle>
-        - programming
-        - video games
-        - guitar
+
+        **Interests**
+        - 💻 Programming
+        - 🎮 Video Games
+        - 🎸 Guitar
     </HeadshotFeatureItem>
-    <HeadshotFeatureItem title="Liz Gehret" image={LizGehret.src}>
+    <HeadshotFeatureItem title="Liz Gehret" image={LizGehret.src} photoSize="w-56 h-56">
         <JobTitle>*Research Software Engineer IV*</JobTitle>
-        - aerial rope
-        - rock climbing
-        - whitewater rafting
+
+        **Interests**
+        - 🤸 Aerial Rope
+        - 🧗 Rock Climbing
+        - 🚣 Whitewater Rafting
     </HeadshotFeatureItem>
-    <HeadshotFeatureItem title="Colin Wood" image={ColinWood.src}>
+    <HeadshotFeatureItem title="Colin Wood" image={ColinWood.src} photoSize="w-56 h-56">
         <JobTitle>*Research Software Engineer III*</JobTitle>
-        - bundesliga
-        - snowboarding
-        - german
+
+        **Interests**
+        - ⚽ Bundesliga
+        - 🏂 Snowboarding
+        - 🇩🇪 German
     </HeadshotFeatureItem>
-    <HeadshotFeatureItem title="Chloe Herman" image={ChloeHerman.src}>
+    <HeadshotFeatureItem title="Chloe Herman" image={ChloeHerman.src} photoSize="w-56 h-56">
         <JobTitle>*Lead Data Scientist*</JobTitle>
-        - hiking
-        - bread baking
-        - metadata standardization
+
+        **Interests**
+        - 🥾 Hiking
+        - 🍞 Bread Baking
+        - 📋 Metadata Standardization
     </HeadshotFeatureItem>
-    <HeadshotFeatureItem title="Jeff Meilander" image={JeffMeilander.src}>
+    <HeadshotFeatureItem title="Jeff Meilander" image={JeffMeilander.src} photoSize="w-56 h-56">
         <JobTitle>*Research Scientist and Program Manager*</JobTitle>
-        - sustainable agriculture
-        - hockey
-        - hiking/backpacking
+
+        **Interests**
+        - 🌾 Sustainable Agriculture
+        - 🏒 Hockey
+        - 🎒 Hiking & Backpacking
     </HeadshotFeatureItem>
 
 </Features2>
 
-<Features2 title="Former Team Members" columns={4}>
+<Features2 columns={4}>
+    <div class="col-span-full mb-4">
+      <hr class="mb-6 border-gray-200" />
+      <h3 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">Undergraduate Researchers</h3>
+      <p class="text-lg text-muted">Every undergraduate who joins this lab does real science. We align students' interests with active research projects, providing one-on-one mentorship to build the academic and professional trajectories that carry them into graduate programs, industry positions, and scientific leadership roles.</p>
+    </div>
+    <HeadshotFeatureItem title="Cianna Brooks" image={CiannaBrooks.src}>
+        <JobTitle>*Interns 2 Scholars Undergraduate Researcher*</JobTitle>
+        - Project:
+            - [Off Earth Agriculture](/projects/undergraduate-research/off-earth-agriculture)
+    </HeadshotFeatureItem>
+    <HeadshotFeatureItem title="Olivia Garcia" image={OliviaGarcia.src}>
+        <JobTitle>*Interns 2 Scholars Undergraduate Researcher*</JobTitle>
+        - Projects:
+            - [Human Excrement Composting](/projects/undergraduate-research/human-excrement-composting)
+            - [Microbial Inoculants](/projects/undergraduate-research/unsourced-features-analysis)
+    </HeadshotFeatureItem>
+    <HeadshotFeatureItem title="Andrew Grusenmeyer" image={AndrewGrusenmeyer.src}>
+        <JobTitle>*Undergraduate Researcher*</JobTitle>
+        - Project:
+            - [Vermicomposting Microbiomes](/projects/undergraduate-research/vermicomposting-gut-microbiome-research)
+    </HeadshotFeatureItem>
+    <HeadshotFeatureItem title="Ailse Soto Herrera" image={AilseSotoHerrera.src}>
+        <JobTitle>*Undergraduate Researcher*</JobTitle>
+        - Projects:
+            - [Vermicomposting](/projects/undergraduate-research/vermicompost-living-lab)
+            - [Vermicomposting Enterprise](/projects/undergraduate-research/vermicomposting-as-a-campus-enterprise)
+            - [Off Earth Agriculture](/projects/undergraduate-research/off-earth-agriculture)
+    </HeadshotFeatureItem>
+    <HeadshotFeatureItem title="Charlotte Hurley" image={CharlotteHurley.src}>
+        <JobTitle>*Undergraduate Researcher*</JobTitle>
+        - Project:
+            - [Vermicomposting](/projects/undergraduate-research/vermicompost-living-lab)
+    </HeadshotFeatureItem>
+    <HeadshotFeatureItem title="Brooke Lercher" image={BrookeLercher.src}>
+        <JobTitle>*Undergraduate Researcher*</JobTitle>
+        - Projects:
+            - [Vermicomposting Microbiomes](/projects/undergraduate-research/vermicomposting-gut-microbiome-research)
+            - [Vermicomposting Enterprise](/projects/undergraduate-research/vermicomposting-as-a-campus-enterprise)
+    </HeadshotFeatureItem>
+    <HeadshotFeatureItem title="Michelle Tang" image={MichelleTang.src}>
+        <JobTitle>*Undergraduate Research Data Analyst*</JobTitle>
+        - Projects:
+            - [QIIME 2](/projects/qiime2/)
+            - [Vermicomposting Microbiomes](/projects/undergraduate-research/vermicomposting-gut-microbiome-research)
+    </HeadshotFeatureItem>
+    <HeadshotFeatureItem title="Macabe Wood" image={MacabeWood.src}>
+        <JobTitle>*Undergraduate Research Software Engineer (University of Arizona)*</JobTitle>
+        - Project:
+            - [QIIME 2](/projects/qiime2/)
+    </HeadshotFeatureItem>
+</Features2>
+
+<Features2 columns={4}>
+    <div class="col-span-full mb-4">
+      <hr class="mb-6 border-gray-200" />
+      <h3 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">Former Team Members</h3>
+      <p class="text-lg text-muted">In science, your legacy is the community you build, the curiosity you share, and the questions you leave open. Our former team members shaped our culture, advanced our research, and have gone on to positions in academia, industry, and open-source science communities worldwide.</p>
+    </div>
     <HeadshotFeatureItem title="Nick Bokulich" image={NickBokulich.src}>
         <JobTitle>*Postdoctoral Scholar*</JobTitle>
     </HeadshotFeatureItem>
@@ -89,7 +175,9 @@ import MaxVonHippel from '~/assets/images/MaxVonHippel.png';
         <JobTitle>*Research Software Engineer V*</JobTitle>
     </HeadshotFeatureItem>
     <HeadshotFeatureItem title="Kaylee Breen" image={KayleeBreen.src}>
-        <JobTitle>*Student Researcher*</JobTitle>
+        <JobTitle>*Undergraduate Researcher*</JobTitle>
+        - Project:
+            - [Alzheimer's Disease Microbiome](/projects/undergraduate-research/alzheimers-disease-microbiome)
     </HeadshotFeatureItem>
     <HeadshotFeatureItem title="Katy Califf" image={KatyCaliff.src}>
         <JobTitle>*Postdoctoral Scholar*</JobTitle>
@@ -138,6 +226,11 @@ import MaxVonHippel from '~/assets/images/MaxVonHippel.png';
     </HeadshotFeatureItem>
     <HeadshotFeatureItem title="David Rodriguez" image={DavidRodriguez.src}>
         <JobTitle>*Student Research Software Engineer*</JobTitle>
+    </HeadshotFeatureItem>
+    <HeadshotFeatureItem title="Alexandra Nast" image={SashaNast.src}>
+        <JobTitle>*Undergraduate Researcher*</JobTitle>
+        - Project:
+            - [Rainwater Diversion](/projects/undergraduate-research/parking-lot-rainwater)
     </HeadshotFeatureItem>
     <HeadshotFeatureItem title="Andrew Sanchez" image={AndrewSanchez.src}>
         <JobTitle>*Research Software Engineer*</JobTitle>

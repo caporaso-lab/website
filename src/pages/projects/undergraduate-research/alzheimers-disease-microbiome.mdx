@@ -1,0 +1,24 @@
+---
+layout: ~/layouts/PageLayout.astro
+title: "Are Gut Microbiome Trends In Alzheimer's Disease Congruent Across Studies? Evaluating Previously Reported Alzheimer's Disease Microbiome Signals With Consistent Bioinformatics Methodology"
+---
+
+import HeroText from '~/components/widgets/HeroText.astro';
+import kayleePosterImg from '~/assets/images/KayleeBreenPosterweb.jpg';
+
+<HeroText
+    id="features"
+    title="<span class='text-primary'>Are Gut Microbiome Trends In Alzheimer's Disease Congruent Across Studies? Evaluating Previously Reported Alzheimer's Disease Microbiome Signals With Consistent Bioinformatics Methodology</span>"
+/>
+
+<div class="max-w-4xl mx-auto px-8 py-10 text-lg leading-relaxed text-left hyphens-auto">
+
+  <p class="mb-10">Undergraduate researcher Kaylee Breen presented a cross-study analysis of gut microbiome composition in Alzheimer's Disease (AD) using QIIME 2 to standardize methods across multiple published datasets. Applying Bray-Curtis and Jaccard beta diversity metrics, Kaylee found significant compositional differences between AD and control gut microbiomes in the majority of studies examined, with Jaccard achieving significance across all 11 presented plots. Notably, younger mice showed more distinct microbial differences between groups than older mice. This work confirms prior findings using a standardized analytical pipeline.</p>
+
+  <div class="flex justify-center my-10">
+    <div class="w-full md:w-1/2">
+      <img src={kayleePosterImg.src} alt="Kaylee Breen Alzheimer's Disease Microbiome poster" class="w-full rounded-lg shadow-md" />
+    </div>
+  </div>
+
+</div>

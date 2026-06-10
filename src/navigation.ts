@@ -22,7 +22,7 @@ export const headerData = {
         { text: 'Vermicomposting', href: getPermalink('/projects/vermicomposting') },
         { text: 'Off Earth Agriculture', href: getPermalink('/projects/space-agriculture') },
         { text: '4CSCC', href: getPermalink('/projects/4cscc') },
-        { text: 'Undergraduate Research', href: getPermalink('/projects/undergraduate-research') },
+        { text: 'Undergraduate Research Projects', href: getPermalink('/projects/undergraduate-research') },
       ],
     },
     {
