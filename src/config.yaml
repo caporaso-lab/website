@@ -1,6 +1,6 @@
 site:
   name: Caporaso Lab
-  site: 'https://cap-lab.bio'
+  site: 'https://cap-lab.us'
   base: '/'
   trailingSlash: false
 
@@ -16,15 +16,13 @@ metadata:
     index: true
     follow: true
   openGraph:
-    site_name: CaporasoLab
+    site_name: Caporaso Lab
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/2026.11-lab-overview.jpg'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
     cardType: summary_large_image
 
 i18n:
