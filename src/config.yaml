@@ -1,6 +1,6 @@
 site:
   name: Caporaso Lab
-  site: 'https://cap-lab.us'
+  site: 'https://www.caplab.dev'
   base: '/'
   trailingSlash: false
 
