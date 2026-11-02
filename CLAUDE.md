@@ -6,6 +6,9 @@ This is the source for the [Caporaso Lab](https://caplab.dev) website, built wit
 Pages are `.astro` or `.mdx` files under `src/pages/`.
 Site-wide config is in `src/config.yaml` and `src/navigation.js`.
 
+To check a change in Claude's sandbox, build with `ASTRO_TELEMETRY_DISABLED=1 ./node_modules/.bin/astro build` and inspect `dist/`.
+Astro's telemetry otherwise fails writing `~/Library/Preferences/astro/config.json`, and `npx` tries to reach the npm registry.
+
 ## Development context
 
 The primary developer is **Jeff Meilander ([@jmeilander](https://github.com/jmeilander))**, who is new to web development and git and works with Claude Code to add and update content.
@@ -36,6 +39,26 @@ sips -Z 1200 thumbnail.png --out thumbnail.png
 ```
 
 Target sizes: photos under 500 KB, poster JPEGs under 1.5 MB, PNG thumbnails under 1 MB.
+
+Detailed photos (trees, grass) can still exceed the target at 1920px and quality 85.
+Then size the image to twice the width it is displayed at and lower the quality to 75–80: the Compost Microbiome Lab photo was 1.06 MB at 1920px/q85 and 564 KB at 1664px/q75 (twice its 832px display width) with no visible loss.
+
+Source size matters most for images shown with a plain `<img src={img.src}>`, which serves the committed file unchanged.
+Astro's `<Image>` component (used by `Hero` and the other widgets) serves resized WebP copies, so there the committed file is only the starting point.
+
+### Front page image
+
+The front page hero image, `src/assets/images/2026.11-lab-overview.jpg`, is the single slide of [this Google Slides deck](https://docs.google.com/presentation/d/1nzPj4tIf-Wn26f1_GgUpLaGAs_leCKJ0USC20W5xfHc/edit).
+To regenerate it after the slide changes, export the deck as PDF (the PNG export is only 960×540) and render it at 1920×1080:
+
+```sh
+curl -sL -o slide.pdf 'https://docs.google.com/presentation/d/1nzPj4tIf-Wn26f1_GgUpLaGAs_leCKJ0USC20W5xfHc/export/pdf'
+pdftoppm -singlefile -scale-to-x 1920 -scale-to-y 1080 -jpeg -jpegopt quality=85 slide.pdf src/assets/images/2026.11-lab-overview
+```
+
+`Hero.astro` defaults its image to `width={1000} height={625}` with `object-fit: cover`, which crops anything that is not 16:10.
+`src/pages/index.mdx` therefore passes `width: 1920, height: 1080` in the `image` object.
+A `class` in the `image` object replaces the component's default classes rather than adding to them, so it repeats `mx-auto rounded-md w-full` before adding `shadow-lg hidden md:block` (drop shadow; hidden below 768px, where the slide's text is unreadable).
 
 ### PDFs
 
