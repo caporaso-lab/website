@@ -2,9 +2,13 @@
 
 ## Project overview
 
-This is the source for the [Caporaso Lab](https://caplab.dev) website, built with Astro + Tailwind CSS on top of the [AstroWind](https://github.com/onwidget/astrowind) template.
+This is the source for the [Caporaso Lab](https://www.caplab.dev) website, built with Astro + Tailwind CSS on top of the [AstroWind](https://github.com/onwidget/astrowind) template.
 Pages are `.astro` or `.mdx` files under `src/pages/`.
-Site-wide config is in `src/config.yaml` and `src/navigation.js`.
+Site-wide config is in `src/config.yaml` and `src/navigation.ts`.
+
+Hosting (Cloudflare Pages project `caplab-website-2`), the canonical address `https://www.caplab.dev`, and the redirects from the lab's other domains are described in `README.md` under "Hosting and domains"; keep that section current when the setup changes.
+`site` in `src/config.yaml` must always be the address that actually serves the site.
+Do not suggest moving the Pages project or the `caplab.dev` zone between Cloudflare accounts, or removing `cap-lab.us` from the project's custom domains (it is a deliberate fallback).
 
 To check a change in Claude's sandbox, build with `ASTRO_TELEMETRY_DISABLED=1 ./node_modules/.bin/astro build` and inspect `dist/`.
 Astro's telemetry otherwise fails writing `~/Library/Preferences/astro/config.json`, and `npx` tries to reach the npm registry.
