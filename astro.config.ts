@@ -24,6 +24,13 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 export default defineConfig({
   output: 'static',
 
+  // team.html rather than team/index.html, so Cloudflare Pages serves /team
+  // directly instead of redirecting it to /team/. Astro.url then ends in .html,
+  // which Metadata.astro (canonical URL) and Header.astro (active link) strip.
+  build: {
+    format: 'file',
+  },
+
   integrations: [
     tailwind({
       applyBaseStyles: false,
