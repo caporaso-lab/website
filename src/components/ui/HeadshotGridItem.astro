@@ -18,7 +18,11 @@ let {
     <div class="flex justify-center">
       {
         image && (
-          <img src={image} class={twMerge('rounded-md mb-1 object-cover brightness-105 contrast-105', photoSize)} />
+          <img
+            src={image}
+            alt={title}
+            class={twMerge('rounded-md mb-1 object-cover brightness-105 contrast-105', photoSize)}
+          />
         )
       }
     </div>
