@@ -20,13 +20,13 @@ Open the URL printed by `npm run dev` (default: <http://localhost:4321>).
 
 ## Common commands
 
-| Command | Action |
-| :--- | :--- |
-| `npm install` | Install dependencies |
-| `npm run dev` | Start local dev server at `localhost:4321` |
-| `npm run build` | Build the production site to `./dist/` |
-| `npm run preview` | Preview the production build locally |
-| `npm run check` | Check the project for errors |
+| Command           | Action                                     |
+| :---------------- | :----------------------------------------- |
+| `npm install`     | Install dependencies                       |
+| `npm run dev`     | Start local dev server at `localhost:4321` |
+| `npm run build`   | Build the production site to `./dist/`     |
+| `npm run preview` | Preview the production build locally       |
+| `npm run check`   | Check the project for errors               |
 
 ## Project structure
 
