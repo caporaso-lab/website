@@ -23,7 +23,10 @@ const {
       <slot />
     </ItemGridContent>
     <div class="">
-      <img src={image} class="w-[300px] h-[500px] lg:w-[500px] lg:h-[700px] 2xl:w-[650px] 2xl:h-[900px] rounded-md" />
+      <img
+        src={image as string}
+        class="w-[300px] h-[500px] lg:w-[500px] lg:h-[700px] 2xl:w-[650px] 2xl:h-[900px] rounded-md"
+      />
     </div>
   </div>
 </WidgetWrapper>
