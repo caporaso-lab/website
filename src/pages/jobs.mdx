@@ -6,14 +6,16 @@ import Features from '~/components/widgets/Features.astro';
 import FeatureItem from '~/components/widgets/FeatureItem.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Content2 from '~/components/widgets/Content2.astro';
-import PMIInside from '~/assets/images/pmi-inside.png';
-import PMIOutside from '~/assets/images/pmi-outside.png';
+import NAUNightSky from '~/assets/images/nau-night-sky.jpg';
 
 <Hero
     image={{
-        src: '~/assets/images/pmi-outside.png',
-        alt: 'A watercolor painting of the ARD building.',
+        src: '~/assets/images/nau-campus-sign.jpg',
+        alt: 'The Northern Arizona University sign at sunset, in front of the Applied Research and Development building, where the Caporaso Lab is housed.',
+        width: 1920,
+        height: 880,
     }}
+    imageCaption="Photo credit: NAU Marketing."
 >
     <Fragment slot="title">
         Join our team:<br />
@@ -29,7 +31,9 @@ import PMIOutside from '~/assets/images/pmi-outside.png';
 
 <Content2
     title="Looking for a Job Opening?"
-    image={PMIInside.src}
+    image={NAUNightSky.src}
+    imageAlt="The Milky Way above the San Francisco Peaks at night."
+    imageCaption="Photo credit: NAU Marketing."
 >
     <FeatureItem title="The QIIME 2 Job Board" icon="tabler:file-smile" iconClass="bg-green-400">
         You can find microbiome, bioinformatics, and QIIME 2 employment opportunities on

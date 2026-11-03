@@ -52,7 +52,10 @@ Detailed photos (trees, grass) can still exceed the target at 1920px and quality
 Then size the image to twice the width it is displayed at and lower the quality to 75–80: the Compost Microbiome Lab photo was 1.06 MB at 1920px/q85 and 564 KB at 1664px/q75 (twice its 832px display width) with no visible loss.
 
 Source size matters most for images shown with a plain `<img src={img.src}>`, which serves the committed file unchanged.
-Astro's `<Image>` component (used by `Hero` and the other widgets) serves resized WebP copies, so there the committed file is only the starting point.
+Astro's `<Image>` component (used by `Hero`) serves resized WebP copies, so there the committed file is only the starting point.
+
+`Hero` and `Content2` take an `imageCaption` prop that prints small, right-aligned text under the image; the Jobs page uses it for `Photo credit: NAU Marketing.` (`Content2` also takes `imageAlt`).
+`Content2` hides its image below 768px, where it would squeeze the text.
 
 ### Front page image
 

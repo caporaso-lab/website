@@ -4,6 +4,6 @@ import { twMerge } from 'tailwind-merge';
 const { containerClass = '' } = Astro.props;
 ---
 
-<div class={twMerge('flex flex-col justify-around w-[50%] pr-8', containerClass)}>
+<div class={twMerge('flex flex-col justify-around w-full md:w-1/2 md:pr-8', containerClass)}>
   <slot />
 </div>
