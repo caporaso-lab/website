@@ -6,7 +6,8 @@ This is the source for the [Caporaso Lab](https://www.caplab.dev) website, built
 Pages are `.astro` or `.mdx` files under `src/pages/`.
 Site-wide config is in `src/config.yaml` and `src/navigation.ts`.
 
-Hosting (Cloudflare Pages project `caplab-website-2`), the canonical address `https://www.caplab.dev`, and the redirects from the lab's other domains are described in `README.md` under "Hosting and domains"; keep that section current when the setup changes.
+Hosting (Cloudflare Pages project `caplab-website-2`) and the canonical address `https://www.caplab.dev` are described in `README.md` under "Hosting and domain"; keep that section current when the setup changes.
+The other domains that redirect to `www.caplab.dev` stay out of the README, by Greg's choice.
 `site` in `src/config.yaml` must always be the address that actually serves the site.
 Do not suggest moving the Pages project or the `caplab.dev` zone between Cloudflare accounts, or removing `cap-lab.us` from the project's custom domains (it is a deliberate fallback).
 
