@@ -23,8 +23,8 @@ let {
   <div class={twMerge('flex flex-col max-w-md', panelClass)}>
     <div class="flex justify-start">
       {icon && <Icon name={icon} class={twMerge('w-7 h-7 mr-2 rtl:mr-0 rtl:ml-2', iconClass)} />}
-      {image && <img src={image} class="dark:hidden w-7 h-7 mr-2" />}
-      {darkImage && <img src={darkImage} class="hidden dark:block w-7 h-7 mr-2" />}
+      {image && <img src={image} alt="" class="dark:hidden w-7 h-7 mr-2" />}
+      {darkImage && <img src={darkImage} alt="" class="hidden dark:block w-7 h-7 mr-2" />}
       {title && <h3 class={twMerge('text-xl font-bold', titleClass)}>{title}</h3>}
     </div>
     <div class="mt-0.5">
