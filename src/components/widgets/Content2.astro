@@ -13,20 +13,24 @@ const {
   classes = {},
   bg = await Astro.slots.render('bg'),
   image = '',
+  imageAlt = '',
+  imageCaption = '',
 } = Astro.props;
 ---
 
 <WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl ${classes?.container ?? ''}`} bg={bg}>
   <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
-  <div class="flex flex-row">
+  <div class="flex flex-col md:flex-row">
     <ItemGridContent containerClass="ml-2 pt-4 gap-2 md:gap-y-4">
       <slot />
     </ItemGridContent>
-    <div class="">
+    <div class="hidden md:block">
       <img
         src={image as string}
-        class="w-[300px] h-[500px] lg:w-[500px] lg:h-[700px] 2xl:w-[650px] 2xl:h-[900px] rounded-md"
+        alt={imageAlt}
+        class="w-[300px] h-[500px] lg:w-[500px] lg:h-[700px] 2xl:w-[650px] 2xl:h-[900px] rounded-md object-cover"
       />
+      {imageCaption && <p class="mt-1 text-xs text-muted text-right">{imageCaption}</p>}
     </div>
   </div>
 </WidgetWrapper>
