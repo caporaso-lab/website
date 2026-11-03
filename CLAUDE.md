@@ -14,6 +14,9 @@ Do not suggest moving the Pages project or the `caplab.dev` zone between Cloudfl
 To check a change in Claude's sandbox, build with `ASTRO_TELEMETRY_DISABLED=1 ./node_modules/.bin/astro build` and inspect `dist/`.
 Astro's telemetry otherwise fails writing `~/Library/Preferences/astro/config.json`, and `npx` tries to reach the npm registry.
 
+`ASTRO_TELEMETRY_DISABLED=1 npm run check` (`astro check`, `eslint`, `prettier --check`) passes on `main` since 2026-11-03; keep it passing.
+`.prettierignore` skips `*.mdx` because Prettier's MDX parser handles only MDX 1: it fails on most pages here and re-wraps the prose of the rest.
+
 ## Development context
 
 The primary developer is **Jeff Meilander ([@jmeilander](https://github.com/jmeilander))**, who is new to web development and git and works with Claude Code to add and update content.
@@ -64,6 +67,13 @@ pdftoppm -singlefile -scale-to-x 1920 -scale-to-y 1080 -jpeg -jpegopt quality=85
 `Hero.astro` defaults its image to `width={1000} height={625}` with `object-fit: cover`, which crops anything that is not 16:10.
 `src/pages/index.mdx` therefore passes `width: 1920, height: 1080` in the `image` object.
 A `class` in the `image` object replaces the component's default classes rather than adding to them, so it repeats `mx-auto rounded-md w-full` before adding `shadow-lg hidden md:block` (drop shadow; hidden below 768px, where the slide's text is unreadable).
+
+### Favicon
+
+The favicons in `src/assets/favicons/` are the 🦠 microbe from [Noto Emoji](https://github.com/googlefonts/noto-emoji) (`2D/svg/emoji_u1f9a0.svg`, Apache 2.0), matching the 🦠 before the lab name in the footer.
+`favicon.svg` is that file passed through `svgo --multipass`.
+`favicon.ico` (16, 32 and 48 px PNGs) and `apple-touch-icon.png` (180 px on white, because iOS fills transparency with black) were rendered from it with `sharp` from `node_modules`.
+Apple's emoji artwork is not licensed for reuse, so take any replacement from an openly licensed set (Noto, Twemoji, Fluent).
 
 ### PDFs
 
