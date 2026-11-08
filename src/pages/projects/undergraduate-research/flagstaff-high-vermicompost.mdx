@@ -1,0 +1,26 @@
+---
+layout: ~/layouts/PageLayout.astro
+title: "Vermicomposting at Flagstaff High School"
+---
+
+import HeroText from '~/components/widgets/HeroText.astro';
+import makenaImg from '~/assets/images/MakenaFoster.jpg';
+
+<HeroText
+    id="features"
+    title="<span class='text-primary'>Vermicomposting at Flagstaff High School</span>"
+/>
+
+<div class="max-w-4xl mx-auto px-8 py-10 text-lg leading-relaxed text-left hyphens-auto">
+
+  <p class="mb-6">Makena Foster, a high school intern from Flagstaff High School, is building a vermicompost bin on campus using food scraps from the school's culinary arts program. By diverting organic waste from the landfill and channeling it through a worm-driven composting system, Makena is turning a school resource into something tangible and useful: finished compost destined for the Flagstaff High School gardens.</p>
+
+  <p class="mb-10">This project is a hands-on introduction to closed-loop systems — the idea that waste from one process can become the input for another. Working through the project, Makena is learning the biology of decomposition, the conditions that keep composting worms healthy, and what it takes to run a living system in a school setting. The finished compost will improve soil health in the campus gardens, closing the loop from kitchen to garden.</p>
+
+  <div class="flex justify-center my-10">
+    <div class="w-full md:w-1/2">
+      <img src={makenaImg.src} alt="Makena Foster, Flagstaff High School intern" class="w-full rounded-lg shadow-md" />
+    </div>
+  </div>
+
+</div>
