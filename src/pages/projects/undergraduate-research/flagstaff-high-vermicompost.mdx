@@ -1,0 +1,56 @@
+---
+layout: ~/layouts/PageLayout.astro
+title: "Vermicomposting at Flagstaff High School"
+---
+
+import HeroText from '~/components/widgets/HeroText.astro';
+import makenaImg from '~/assets/images/MakenaFoster.jpg';
+import binDadImg from '~/assets/images/MakenaFosterBinDad.jpg';
+import binClosedImg from '~/assets/images/MakenaFosterBinClosed.jpg';
+import binOpenImg from '~/assets/images/MakenaFosterBinOpen.jpg';
+import binInsideImg from '~/assets/images/MakenaFosterBinInside.jpg';
+import jeffMeilanderImg from '~/assets/images/MakenaFosterJeffMeilander.jpg';
+
+<HeroText
+    id="features"
+    title="<span class='text-primary'>Vermicomposting at Flagstaff High School</span>"
+/>
+
+<div class="max-w-4xl mx-auto px-8 py-10 text-lg leading-relaxed text-left">
+
+  <p class="mb-6">Makena Foster, a high school intern from Flagstaff High School, is building a vermicompost bin on campus using food scraps from the school's culinary arts program. By diverting organic waste from the landfill and channeling it through a worm-driven composting system, Makena is turning a school resource into something tangible and useful: finished compost destined for the FHS gardens.</p>
+
+  <p class="mb-10">This project is a hands-on introduction to closed-loop systems — the idea that waste from one process can become the input for another. Working through the project, Makena is learning the biology of decomposition, the conditions that keep composting worms healthy, and what it takes to run a living system in a school setting. The finished compost will improve soil health in the FHS gardens, closing the loop from kitchen to garden.</p>
+
+  <div class="flex justify-center my-10">
+    <div class="w-full md:w-1/2">
+      <img src={makenaImg.src} alt="Makena Foster, Flagstaff High School intern" class="w-full rounded-lg shadow-md" />
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
+    <div>
+      <img src={binDadImg.src} alt="Makena Foster and her dad Jeff Foster with the vermicompost bin" class="w-full rounded-lg shadow-md" />
+      <p class="text-sm text-gray-500 mt-2 text-center">Father daughter collaborative project: Makena and her dad Dr. Jeff Foster.</p>
+    </div>
+    <div>
+      <img src={binClosedImg.src} alt="Makena's finished vermicompost bin, closed" class="w-full rounded-lg shadow-md" />
+      <p class="text-sm text-gray-500 mt-2 text-center">Makena's finished vermicompost bin.</p>
+    </div>
+    <div>
+      <img src={binOpenImg.src} alt="Vermicompost bin with lid open showing interior" class="w-full rounded-lg shadow-md" />
+    </div>
+    <div>
+      <img src={binInsideImg.src} alt="Inside of the vermicompost bin showing compost material" class="w-full rounded-lg shadow-md" />
+      <p class="text-sm text-gray-500 mt-2 text-center">Inside of the vermicompost bin.</p>
+    </div>
+  </div>
+
+  <div class="flex justify-center mt-6">
+    <div class="w-full sm:w-1/2">
+      <img src={jeffMeilanderImg.src} alt="Makena Foster and her advisor Jeff Meilander" class="w-full rounded-lg shadow-md" />
+      <p class="text-sm text-gray-500 mt-2 text-center">Makena and her advisor Dr. Jeff Meilander.</p>
+    </div>
+  </div>
+
+</div>
